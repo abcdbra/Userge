@@ -20,7 +20,7 @@ from apiclient.discovery import build
 from httplib2 import Http
 from oauth2client import file, client
 
-from userge import userge, Message, Config
+from userge import userge, Message, Config, get_collection, poll
 from userge.utils import progress
 
 
