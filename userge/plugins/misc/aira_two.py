@@ -12,7 +12,7 @@ import aria2p
 import asyncio
 import io
 import os
-from userge import userge, Message, Config
+from userge import userge, Message, Config, poll
 
 
 EDIT_SLEEP_TIME_OUT = 15
