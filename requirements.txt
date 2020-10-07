@@ -55,5 +55,6 @@ spotdl
 tracemoepy
 validators
 telethon
-
+aria2p
 -r ./requirements-stdborg.txt
+asyncio
