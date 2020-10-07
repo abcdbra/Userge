@@ -146,7 +146,7 @@ async def remove_all(event):
     await event.edit("`Removed All Downloads.`")
 
 
-@borg.on(admin_cmd(pattern="ariaP"))
+@userge.on_cmd("ariap")
 async def pause_all(event):
     if event.fwd_from:
         return
@@ -155,7 +155,7 @@ async def pause_all(event):
     await event.edit("Output: " + str(paused))
 
 
-@borg.on(admin_cmd(pattern="ariaResume"))
+@userge.on_cmd("ariaResume")
 async def resume_all(event):
     if event.fwd_from:
         return
