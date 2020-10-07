@@ -7,6 +7,8 @@
         "telegram",
         "pluggable",
         "userbot"
+        "youtube"
+        "uploader"
     ],
     "repository": "https://github.com/UsergeTeam/Userge",
     "website": "https://github.com/Userge",
