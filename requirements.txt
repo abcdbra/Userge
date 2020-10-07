@@ -57,4 +57,4 @@ validators
 telethon
 aria2p
 
-asyncio
+
