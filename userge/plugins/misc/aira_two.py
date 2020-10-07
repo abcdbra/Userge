@@ -12,7 +12,7 @@ import aria2p
 import asyncio
 import io
 import os
-from userge import userge, Message, Config, pool
+from userge import userge, Message
 
 
 EDIT_SLEEP_TIME_OUT = 15
@@ -21,7 +21,7 @@ ARIA2_STARTED_PORT = 6800
 aria2 = None
 
 
-@userge.on_cmd("aira_start")
+@userge.on_cmd("aria_start")
 async def aria_start(event):
     aria2_daemon_start_cmd = []
     # start the daemon, aria2c command
