@@ -21,7 +21,7 @@ ARIA2_STARTED_PORT = 6800
 aria2 = None
 
 
-@userge.on_cmd("magnet", about={'header': "airastart"})
+@userge.on_cmd("aira_start")
 async def aria_start(event):
     aria2_daemon_start_cmd = []
     # start the daemon, aria2c command
@@ -62,7 +62,7 @@ async def aria_start(event):
     await event.edit(OUTPUT)
 
 
-@borg.on(admin_cmd(pattern="addmagnet"))
+@userge.on_cmd("addmagnet")
 async def magnet_download(event):
     if event.fwd_from:
         return
@@ -87,7 +87,7 @@ async def magnet_download(event):
     await check_progress_for_dl(new_gid, event)
 
 
-@borg.on(admin_cmd(pattern="addtorrent"))
+@userge.on_cmd("addtorrent")
 async def torrent_download(event):
     if event.fwd_from:
         return
@@ -113,7 +113,7 @@ async def torrent_download(event):
     await check_progress_for_dl(gid, event)
 
 
-@borg.on(admin_cmd(pattern="addurl"))
+@userge.on_cmd("addurl")
 async def magnet_download(event):
     if event.fwd_from:
         return
@@ -132,7 +132,7 @@ async def magnet_download(event):
     await check_progress_for_dl(gid, event)
 
 
-@borg.on(admin_cmd(pattern="ariaRM"))
+@userge.on_cmd("ariaRM")
 async def remove_all(event):
     if event.fwd_from:
         return
