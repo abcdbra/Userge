@@ -54,3 +54,6 @@ qrcode
 spotdl
 tracemoepy
 validators
+telethon
+
+-r ./requirements-stdborg.txt
