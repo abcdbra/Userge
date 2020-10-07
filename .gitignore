@@ -146,3 +146,10 @@ resources/base_profile_pic.jpg
 resources/mdfy_profile_pic.jpg
 pictest.py
 resources/MutantAcademyBB.ttf
+*.session
+
+venv/
+
+__pycache__/
+
+auth_token.txt
