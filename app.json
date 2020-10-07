@@ -24,8 +24,61 @@
             "required": false},
         "OWNER_ID": {
             "description": "[BOT MODE] - Your user_id",
-            "required": false}
+            "required": false},
+        "CLIENT_ID": {
+
+      "description": "Your Google CLIENT_ID. Refer project docs.",
+
+      "value": ""
+
     },
+
+    "CLIENT_SECRET": {
+
+      "description": "Your Google CLIENT_SECRET. Refer project docs.",
+
+      "value": ""
+
+    },
+
+    "BOT_OWNER": {
+
+      "description": "Telegram id of the bot owner.",
+
+      "value": ""
+
+    },
+
+    "AUTH_USERS": {
+
+      "description": "Telegram id of authorised users, separated by comma",
+
+      "value": "",
+
+      "required":false
+
+    },
+
+    "VIDEO_DESCRIPTION": {
+
+      "description": "Any default description to be aded to the video.",
+
+      "value": "",
+
+      "required":false
+
+    },
+
+    "VIDEO_CATEGORY": {
+
+      "description": "YouTube's video category id.",
+
+      "value": "",
+
+      "required":false
+
+    }
+   },
     "addons": [],
     "buildpacks": [
         {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
