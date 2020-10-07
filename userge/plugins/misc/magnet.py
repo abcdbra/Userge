@@ -163,7 +163,7 @@ async def resume_all(event):
     await event.edit("Output: " + str(resumed))
 
 
-@borg.on(admin_cmd(pattern="showariastatus"))
+@userge.on_cmd("showariastatus")
 async def show_all(event):
     if event.fwd_from:
         return
